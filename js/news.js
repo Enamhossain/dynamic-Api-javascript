@@ -34,7 +34,15 @@ const loadData = id => {
 
 
 }
+//  length category
 
+const foundnews= document.getElementById('no-found-message');
+if(news.length === 0){
+    foundnews.classList.remove('d-none');
+}
+else{
+    noPhone.classList.add('d-none');
+}
 
 const displayNewsCategory = news => {
   // console.log(news)
@@ -88,19 +96,19 @@ const loadNewsDetails = async id => {
 
 }
 
-const displayNewsDetails = details => {
-  console.log(details)
-  // details.forEach(modeldetails =>{
-  const modalTitle = document.getElementById('newsDetailModalLabel');
-  modalTitle.innerText = details.title;
-  const newsDetails= document.getElementById('news-details');
-  console.log(details);
-  newsDetails.innerHTML=`
-      <p>${modeldetails.total_view}</p>
-      <p>${modeldetails.author.published_date}</p>
-      <p>${mode.details}</p>
-   `
-  modalTitle.appendChild(newsDetails)
-  // })
+const displayNewsDetails = news => {
+ 
+  console.log(news)
+  const modelTitle = document.getElementById('newsDetailModalLabel')
+  modelTitle.innerText = news.title 
+  const newsmodelset = document.getElementById('newsdetails')
+  newsmodelset.innerHTML = `
+   <p>${news.details}</p>
+   <p>${news.author.published_date}</p>
+   <span>${news.total_view}</span>
+  
+  `
+
+  
 }
 

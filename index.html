@@ -86,10 +86,27 @@
         <a class="btn mx-4 btn-sm btn-outline-secondary" href="#">News</a>
       </div>
     </div>
+
+    
+    
+  
+    <input type="text">
   </header>
   <!-- header end -->
   <nav class="container">
-    <div class="sm-nav-scroller py-1 md-mb-2">
+    <div id="no-found-message" class="mt-4 ">
+      <p class="text-secondary"> items found for category Entertainment</p>
+  </div>
+  <div class="d-flex justify-content-between">
+      <small>Sort by view:<input type="text" placeholder="Default"></small>
+      <div class="d-flex">
+          <button class="btn btn-primary">Today's Pick</button>
+          <button class="btn btn-white border ms-5">Trending</button>
+      </div>
+  </div>
+
+
+    <div class="sm-nav-scroller py-1 md-mb-2 mt-5">
       <nav id="news-menu" class="nav d-flex justify-content-evenly">
 
 
@@ -116,7 +133,7 @@
                       <h5 class="modal-title" id="newsDetailModalLabel"></h5>
                       <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
                   </div>
-                  <div id="news-details" class="modal-body">
+                  <div id="newsdetails" class="modal-body">
                       
                   </div>
                   <div class="modal-footer">
