@@ -81,29 +81,63 @@
         <a class="blog-header-logo text-decoration-none text-dark" href="#">THE NEWYORK TIME</a>
       </div>
       <div class="col-4 d-flex  ">
-        <a class="btn btn-sm btn-outline-secondary" href="#">Blog</a>
 
-        <a class="btn mx-4 btn-sm btn-outline-secondary" href="#">News</a>
+        <button class="btn btn-primary" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasTop"
+          aria-controls="offcanvasTop">blog</button>
+
+        <div class="offcanvas offcanvas-top" tabindex="-1" id="offcanvasTop" aria-labelledby="offcanvasTopLabel">
+          <div class="offcanvas-header">
+            <h5 id="offcanvasTopLabel">Question</h5>
+            <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+          </div>
+          <div class="offcanvas-body">
+            <p>Difference between var and let const?</p>
+            <p>Ans:The scope of a var variable is functional scope. The scope of a let variable is block scope. The
+              scope of a const variable is block scope</p>
+            <br>
+            <p>Difference Between Arrow Function And Regular Function ?</p>
+            <ol type="1">
+              <h5>Ans:</h5>
+              <li>Syntax</li>
+              <li>this</li>
+              <li>new keyword</li>
+              <li> No duplicate named parameters</li>
+              <li> Function Hoisting</li>
+              <li> Methods</li>
+ </ol>
+        <p>Difference Between Map , Filter And Find? </p>
+        <ol type='a'>
+          <h5>Ans:</h5>
+          <li>.map() when you want to transform elements in an array.</li>
+          <li>.filter() when you want to select a subset of multiple elements from an array.</li>
+          <li>.find() When you want to select a single element from an array.</li>
+          
+</ol>
+        
+
+          </div>
+        </div>
+
+        <a class="btn mx-4 btn-sm btn-outline-secondary" href="/index.html">News</a>
       </div>
     </div>
 
-    
-    
-  
-    <input type="text">
+
+
+
   </header>
   <!-- header end -->
   <nav class="container">
     <div id="no-found-message" class="mt-4 ">
-      <p class="text-secondary"> items found for category Entertainment</p>
-  </div>
-  <div class="d-flex justify-content-between">
+      <!-- <p class="text-secondary"> items found for category Entertainment</p> -->
+    </div>
+    <div class="d-flex justify-content-between">
       <small>Sort by view:<input type="text" placeholder="Default"></small>
       <div class="d-flex">
-          <button class="btn btn-primary">Today's Pick</button>
-          <button class="btn btn-white border ms-5">Trending</button>
+        <button class="btn btn-primary">Today's Pick</button>
+        <button class="btn btn-white border ms-5">Trending</button>
       </div>
-  </div>
+    </div>
 
 
     <div class="sm-nav-scroller py-1 md-mb-2 mt-5">
@@ -118,31 +152,31 @@
 
     <section class="container">
       <div id="news-container" class="row row-cols-2 row-cols-sm-1 row-cols-md-2 g-4">
-             
+
       </div>
 
     </section>
     <section>
-            
+
       <!-- Modal -->
       <div class="modal fade" id="newsDetailModal" tabindex="-1" aria-labelledby="newsDetailModalLabel"
-          aria-hidden="true">
-          <div class="modal-dialog">
-              <div class="modal-content">
-                  <div class="modal-header">
-                      <h5 class="modal-title" id="newsDetailModalLabel"></h5>
-                      <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-                  </div>
-                  <div id="newsdetails" class="modal-body">
-                      
-                  </div>
-                  <div class="modal-footer">
-                      <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
-                  </div>
-              </div>
+        aria-hidden="true">
+        <div class="modal-dialog">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h5 class="modal-title" id="newsDetailModalLabel"></h5>
+              <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div id="newsdetails" class="modal-body">
+
+            </div>
+            <div class="modal-footer">
+              <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+            </div>
           </div>
+        </div>
       </div>
-  </section>
+    </section>
 
   </main>
 
